@@ -413,7 +413,7 @@
             </div>
 
             <div class="mb-4">
-              <textarea class="form-control" name="Massage" cols="20" rows="3" placeholder="Your Message"
+              <textarea class="form-control" name="Message" cols="20" rows="3" placeholder="Your Message"
                 autocomplete="off"></textarea>
             </div>
 
@@ -463,9 +463,7 @@
 
   <!-- contact form send info to google sheet -->
   <script>
-    // const scriptURL = 'https://script.google.com/macros/s/AKfycbxTmVQFYq-kVfgUo83xCHRbR8DSjsManr7mL3fXq0g-Qxs8g13C4ZEpcYhLlwGCK1s-/exec'
-    // const scriptURL = 'https://script.google.com/macros/s/AKfycbyh_bGN0ngSTpqHxopKayo1_L95rC6-Rw7TeAqQK84Sl3KkQ7UQ1quBI1Iv-E5LuW2D/exec'
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyh_bGN0ngSTpqHxopKayo1_L95rC6-Rw7TeAqQK84Sl3KkQ7UQ1quBI1Iv-E5LuW2D/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzS7Q45xHWe1a5d_M2blClOtBn7BhzFLI7kDCzkRfo6qcCsBHrHb7w2PL1tBqwiPyGB/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
 
@@ -482,36 +480,6 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    // Replace with the actual URL after deploying your Apps Script
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyh_bGN0ngSTpqHxopKayo1_L95rC6-Rw7TeAqQK84Sl3KkQ7UQ1quBI1Iv-E5LuW2D/exec'; // Example: https://script.google.com/macros/s/...
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById("msg");
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-
-      $.ajax({ // Use jQuery's AJAX for form submission (optional)
-        url: scriptURL,
-        type: 'POST',
-        data: new FormData(form),
-        success: function (response) {
-          msg.innerHTML = "Message sent successfully!";
-          setTimeout(function () {
-            msg.innerHTML = "";
-          }, 5000);
-          form.reset();
-        },
-        error: function (error) {
-          console.error('Error!', error.message);
-        }
-      });
-    });
-  </script> -->
-
 
 </body>
 
