@@ -2,16 +2,29 @@
 AOS.init({
     duration: 800,
     once: true,
-    offset: 100
+    offset: 50,
+    disable: 'mobile' // Disable animations on mobile if they continue to cause scroll issues
 });
+
 
 // Header Scroll Effect
 const nav = document.querySelector(".navbar");
+const navbarToggler = document.querySelector(".navbar-toggler");
+const togglerIcon = navbarToggler.querySelector("i");
+
 window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop > 50) {
         nav.classList.add("header-scrolled");
     } else {
         nav.classList.remove("header-scrolled");
+    }
+});
+
+navbarToggler.addEventListener("click", () => {
+    if (navbarToggler.classList.contains("collapsed")) {
+        togglerIcon.classList.replace("fa-xmark", "fa-bars-staggered");
+    } else {
+        togglerIcon.classList.replace("fa-bars-staggered", "fa-xmark");
     }
 });
 
@@ -23,6 +36,7 @@ navLinks.forEach((link) => {
         if (navCollapse.classList.contains("show")) {
             const bsCollapse = new bootstrap.Collapse(navCollapse);
             bsCollapse.hide();
+            togglerIcon.classList.replace("fa-xmark", "fa-bars-staggered");
         }
     });
 });
