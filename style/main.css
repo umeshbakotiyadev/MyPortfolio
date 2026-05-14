@@ -108,10 +108,15 @@ a {
 }
 
 section {
-    padding: var(--space-section) 0;
+    padding: clamp(60px, 8vw, 100px) 0;
     width: 100%;
     position: relative;
     overflow: hidden;
+}
+
+footer {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
 }
 
 .bg-alt {
@@ -375,6 +380,22 @@ section {
 
     .main-btn, .btn-outline {
         width: 100%;
+    }
+}
+
+/* Laptop/Desktop Refinements (992px to 1200px) */
+@media (max-width: 1199.98px) {
+    .navbar .container {
+        padding: 0 30px;
+    }
+
+    .nav-link {
+        margin-left: 18px;
+        font-size: 0.9rem;
+    }
+    
+    .ms-lg-4 {
+        margin-left: 1rem !important;
     }
 }
 
