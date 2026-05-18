@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umeshbakotiyadev.github.io/MyPortfolio/sitemap.xml
