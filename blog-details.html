@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Blog Details | Umesh Bakotiya</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="canonical" href="https://umeshbakotiya.dev/blog-details.html" id="canonical-link">
+    <link rel="canonical" href="https://umeshbakotiyadev.github.io/MyPortfolio/blog-details.html" id="canonical-link">
     <meta name="description" content="Read full article on mobile development and architecture.">
     <meta name="author" content="Umesh Bakotiya">
 
@@ -49,7 +49,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://umeshbakotiya.dev/blog-details.html"
+        "@id": "https://umeshbakotiyadev.github.io/MyPortfolio/blog-details.html"
       },
       "author": {
         "@type": "Person",
@@ -68,9 +68,10 @@
                 <a class="navbar-brand" href="index.html">
                     UMESH<span style="color: var(--accent-color);">.</span>
                 </a>
-                
-                <a href="blog.html" class="btn-outline btn-sm px-3 py-2 ms-auto d-flex align-items-center">
-                    <i class="fas fa-arrow-left me-2"></i> <span class="d-none d-sm-inline">Back to Blog</span><span class="d-inline d-sm-none">Back</span>
+
+                <a href="blog.html" class="btn-outline btn-sm px-3 py-2 ms-auto d-flex align-items-center w-auto">
+                    <i class="fas fa-arrow-left me-2"></i> <span class="d-none d-sm-inline">Back to Blog</span><span
+                        class="d-inline d-sm-none">Back</span>
                 </a>
             </div>
         </nav>
@@ -135,7 +136,7 @@
                 if (ogDesc) ogDesc.setAttribute('content', blog.summary);
 
                 const ogImage = document.querySelector('meta[property="og:image"]');
-                if (ogImage) ogImage.setAttribute('content', `https://umeshbakotiya.dev/${blog.image}`);
+                if (ogImage) ogImage.setAttribute('content', `https://umeshbakotiyadev.github.io/MyPortfolio/${blog.image}`);
 
                 const ogUrl = document.querySelector('meta[property="og:url"]');
                 if (ogUrl) ogUrl.setAttribute('content', window.location.href);
@@ -147,7 +148,7 @@
                 if (twitterDesc) twitterDesc.setAttribute('content', blog.summary);
 
                 const twitterImage = document.querySelector('meta[property="twitter:image"]');
-                if (twitterImage) twitterImage.setAttribute('content', `https://umeshbakotiya.dev/${blog.image}`);
+                if (twitterImage) twitterImage.setAttribute('content', `https://umeshbakotiyadev.github.io/MyPortfolio/${blog.image}`);
 
                 const canonicalLink = document.getElementById('canonical-link');
                 if (canonicalLink) canonicalLink.setAttribute('href', window.location.href);
@@ -160,7 +161,7 @@
                         <h1 class="display-4 fw-bold mb-4">${blog.title}</h1>
                         <p class="text-muted">By ${blog.author} • ${blog.date}</p>
                     </div>
-                    <img src="${blog.image}" alt="${blog.title}" class="img-fluid rounded-4 mb-5 w-100" style="max-height: 500px; object-fit: cover;" onerror="this.src='img/3.png'">
+                    <img src="${blog.image}" alt="${blog.title}" class="img-fluid rounded-4 mb-5 w-100" style="height: auto;" onerror="this.src='img/3.png'">
                     <div class="blog-article-content">
                         ${blog.content}
                     </div>
@@ -170,7 +171,7 @@
                 const schema = JSON.parse(document.getElementById('article-schema').innerHTML);
                 schema.headline = blog.title;
                 schema.description = blog.summary;
-                schema.image = `https://umeshbakotiya.dev/${blog.image}`;
+                schema.image = `https://umeshbakotiyadev.github.io/MyPortfolio/${blog.image}`;
                 schema.datePublished = blog.date;
                 schema.dateModified = blog.date;
                 schema.url = window.location.href;

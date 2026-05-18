@@ -1,5 +1,16 @@
 const BLOG_DATA = [
     {
+        "id": "3",
+        "title": "Sandesh News Mobile App Production Release",
+        "slug": "sandesh-news-mobile-app-release",
+        "date": "May 18, 2026",
+        "author": "Umesh Bakotiya",
+        "category": "Milestone",
+        "summary": "Excited to share the recent production release of the official Sandesh News mobile application for Android and iOS.",
+        "image": "img/blog-3.png",
+        "content": "<p>Excited to share one of my recent milestones as a Mobile App Developer for Sandesh News 🚀</p><p>I had the opportunity to work on the new production release of the official Sandesh News mobile application for both Android and iOS platforms. This release focused on delivering a completely refreshed user experience with an improved UI, smoother navigation, better performance, and multiple new user-focused enhancements.</p><p>From redesigning key app flows to optimizing performance and implementing new functionalities, the goal was simple. Make news consumption faster, cleaner, and more engaging for users across devices.</p><h3>Key Improvements</h3><ul><li>Modernized and cleaner UI experience</li><li>Enhanced app performance and responsiveness</li><li>Improved navigation and content accessibility</li><li>Better overall user engagement experience</li><li>Stability improvements and bug fixes across platforms</li></ul><p>Working on a large-scale production application used by thousands of users was a great learning experience and an exciting challenge.</p><p><strong>App Links:</strong><br>Android App: <a href=\"https://lnkd.in/gxs5JSJj\" target=\"_blank\">https://lnkd.in/gxs5JSJj</a><br>iOS App: <a href=\"https://lnkd.in/gNENCxUe\" target=\"_blank\">https://lnkd.in/gNENCxUe</a></p>"
+    },
+    {
         "id": "1",
         "title": "Mastering React Native Performance in 2024",
         "slug": "mastering-react-native-performance-2024",

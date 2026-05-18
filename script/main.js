@@ -46,12 +46,12 @@ const latestBlogContainer = document.getElementById('latest-blog-container');
 if (latestBlogContainer && typeof BLOG_DATA !== 'undefined') {
     const latestBlogs = BLOG_DATA.slice(0, 2);
     latestBlogContainer.innerHTML = '';
-    BLOG_DATA.forEach((blog, index) => {
+    latestBlogs.forEach((blog, index) => {
         latestBlogContainer.innerHTML += `
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="${index * 100}">
                 <article class="studio-card h-100">
                     <div class="mb-4 overflow-hidden rounded-4">
-                        <img src="${blog.image}" alt="${blog.title}" class="img-fluid w-100" style="height: 250px; object-fit: cover;" onerror="this.src='img/3.png'">
+                        <img src="${blog.image}" alt="${blog.title}" class="img-fluid w-100" style="aspect-ratio: 16/9; object-fit: cover;" onerror="this.src='img/3.png'">
                     </div>
                     <div class="d-flex gap-2 mb-3">
                         <span class="badge-custom">${blog.category}</span>

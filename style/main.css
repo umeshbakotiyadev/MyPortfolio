@@ -384,7 +384,7 @@ footer {
 }
 
 /* Laptop/Desktop Refinements (992px to 1200px) */
-@media (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .navbar .container {
         padding: 0 30px;
     }
